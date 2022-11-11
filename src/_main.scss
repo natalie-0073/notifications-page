@@ -1,0 +1,138 @@
+@import 'variables';
+body{
+    background-color: $very-light-grayish-blue;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-family: $font-family;
+    font-size: 15px;
+}
+.main-container{
+    background-color: $white;
+    max-width: 600px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    &__control{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 10px 20px 10px;
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
+        
+    }
+    
+}
+.control-read{
+    color: $dark-grayish-blue;
+    cursor: pointer;
+    &:hover{
+        color: $blue;
+    }
+}
+.control-heading{
+   
+    h5{
+        font-size: 1.5rem;
+        color: $very-dark-blue;
+        margin: 0px;
+        padding: 0;
+        .control-heading__num{
+            color: $white;
+            background-color: $blue;
+            padding: 5px 10px;
+            font-size: 1rem;
+        border-radius: 5px;
+        }
+    }
+    
+}
+.content-notification{
+    padding: 10px;
+    border-radius: 5px;
+        display: flex;
+        gap: 20px;
+        // background-color: $very-light-grayish-blue;
+        align-items: flex-start;
+        &__photo{
+            img{
+                max-width: 40px;
+            }
+        }
+        &__text{
+            color: $dark-grayish-blue;
+            
+        }
+        
+    
+}
+.picture-comment{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    img{
+        max-width: 40px;
+        margin-right: 10px;
+    }
+}
+.text--time{
+    margin: 0;
+                padding: 0;
+                color: $grayish-blue;
+}
+.text--accent-blue{
+    color: $very-dark-blue;
+    font-weight: 800;
+    transition: all .2s;
+    
+    &:hover{
+        color: $blue;
+        cursor: pointer;
+    }
+}
+.text--accent-gray{
+    color: $dark-grayish-blue;
+    font-weight: 800;
+    transition: all .2s;
+    &:hover{
+        color: $blue;
+        cursor: pointer;
+    }
+}
+.text--message{
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid $light-grayish-blue2;
+    transition: all .2s;
+    &:hover{
+        background-color: $light-grayish-blue1;
+        cursor: pointer;
+    }
+}
+.circle{
+    height: 7px;
+    width: 7px;
+    display: inline-block;
+    
+    background-color: $red;
+    border-radius: 50%;
+}
+@media(max-width:430px){
+    .main-container{
+        padding: 0;
+    }
+    .control-heading{
+        h5{
+            font-size: 1rem;
+        }
+    }
+}

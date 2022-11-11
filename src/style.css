@@ -1,0 +1,131 @@
+body {
+  background-color: hsl(210deg, 60%, 98%);
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 15px;
+}
+
+.main-container {
+  background-color: hsl(0deg, 0%, 100%);
+  max-width: 600px;
+  padding: 20px 40px;
+  border-radius: 10px;
+}
+.main-container__control {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 10px 20px 10px;
+}
+.main-container__content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.control-read {
+  color: hsl(219deg, 12%, 42%);
+  cursor: pointer;
+}
+.control-read:hover {
+  color: hsl(219deg, 85%, 26%);
+}
+
+.control-heading h5 {
+  font-size: 1.5rem;
+  color: hsl(224deg, 21%, 14%);
+  margin: 0px;
+  padding: 0;
+}
+.control-heading h5 .control-heading__num {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(219deg, 85%, 26%);
+  padding: 5px 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.content-notification {
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+.content-notification__photo img {
+  max-width: 40px;
+}
+.content-notification__text {
+  color: hsl(219deg, 12%, 42%);
+}
+
+.picture-comment {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.picture-comment img {
+  max-width: 40px;
+  margin-right: 10px;
+}
+
+.text--time {
+  margin: 0;
+  padding: 0;
+  color: hsl(219deg, 14%, 63%);
+}
+
+.text--accent-blue {
+  color: hsl(224deg, 21%, 14%);
+  font-weight: 800;
+  transition: all 0.2s;
+}
+.text--accent-blue:hover {
+  color: hsl(219deg, 85%, 26%);
+  cursor: pointer;
+}
+
+.text--accent-gray {
+  color: hsl(219deg, 12%, 42%);
+  font-weight: 800;
+  transition: all 0.2s;
+}
+.text--accent-gray:hover {
+  color: hsl(219deg, 85%, 26%);
+  cursor: pointer;
+}
+
+.text--message {
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid hsl(205deg, 33%, 90%);
+  transition: all 0.2s;
+}
+.text--message:hover {
+  background-color: hsl(211deg, 68%, 94%);
+  cursor: pointer;
+}
+
+.circle {
+  height: 7px;
+  width: 7px;
+  display: inline-block;
+  background-color: hsl(1deg, 90%, 64%);
+  border-radius: 50%;
+}
+
+@media (max-width: 430px) {
+  .main-container {
+    padding: 0;
+  }
+  .control-heading h5 {
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */
