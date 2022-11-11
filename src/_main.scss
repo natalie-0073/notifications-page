@@ -45,13 +45,14 @@ body{
         color: $very-dark-blue;
         margin: 0px;
         padding: 0;
-        .control-heading__num{
-            color: $white;
-            background-color: $blue;
-            padding: 5px 10px;
-            font-size: 1rem;
-        border-radius: 5px;
-        }
+        
+    }
+    &__num{
+        color: $white;
+        background-color: $blue;
+        padding: 5px 10px;
+        font-size: 1rem;
+    border-radius: 5px;
     }
     
 }
@@ -133,6 +134,9 @@ body{
     .control-heading{
         h5{
             font-size: 1rem;
+        }
+        &__num{
+            font-size: .7rem;
         }
     }
 }

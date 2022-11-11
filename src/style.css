@@ -43,7 +43,7 @@ body {
   margin: 0px;
   padding: 0;
 }
-.control-heading h5 .control-heading__num {
+.control-heading__num {
   color: hsl(0deg, 0%, 100%);
   background-color: hsl(219deg, 85%, 26%);
   padding: 5px 10px;
@@ -127,5 +127,8 @@ body {
   }
   .control-heading h5 {
     font-size: 1rem;
+  }
+  .control-heading__num {
+    font-size: 0.7rem;
   }
 }/*# sourceMappingURL=style.css.map */
