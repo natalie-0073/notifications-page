@@ -65,6 +65,19 @@ body {
   color: hsl(219deg, 12%, 42%);
 }
 
+.active {
+  background-color: hsl(210deg, 60%, 98%);
+  cursor: pointer;
+}
+.active .content-notification__text .circled::after {
+  content: " ";
+  background-color: hsl(1deg, 90%, 64%);
+  width: 7px;
+  height: 7px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
 .picture-comment {
   width: 100%;
   display: flex;

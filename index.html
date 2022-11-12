@@ -15,29 +15,30 @@
     <main class="main">
         <div class="main-container">
             <div class="main-container__control">
-                <div class="control-heading"><h5>Notifications <span class="control-heading__num"> 3</span></h5></div>
-                <div class="control-read">Mark all as read</div>
+                <div class="control-heading"><h5>Notifications <span class="control-heading__num"> </span></h5></div>
+                <div class="control-read" id="all-read">Mark all as read</div>
             </div>
             <div class="main-container__content">
 
-            <div class="content-notification">
+            <div class="content-notification active">
                 <div class="content-notification__photo"><img src="src/images/avatar-mark-webber.webp"/></div>
                 <div class="content-notification__text">
-                    <span class="text--accent-blue">Mark Webber</span> reacted to your recent post <span class="text--accent-gray">My first tournament today!  <span class="circle"></span></span>
+                    <span  class="circled"><span class="text--accent-blue">Mark Webber</span> reacted to your recent post <span class="text--accent-gray">My first tournament today!  </span></span>
+                    
 
                     <p class="text--time">1m ago</p>
                 </div>
             </div>
-            <div class="content-notification">
+            <div class="content-notification active">
                 <div class="content-notification__photo"><img src="src/images/avatar-angela-gray.webp"/></div>
                 <div class="content-notification__text">
-                    <span class="text--accent-blue">Angela Gray</span> followed you  <span class="circle"></span>
+                    <span class="circled"><span class="text--accent-blue">Angela Gray</span> followed you  </span>
                     <p class="text--time">5m ago</p>
                 </div></div>
-            <div class="content-notification">
+            <div class="content-notification active">
                 <div class="content-notification__photo"><img src="src/images/avatar-jacob-thompson.webp"/></div>
                 <div class="content-notification__text">
-                    <span class="text--accent-blue">Jacob Thompson</span> has joined your group <span class="text--accent-blue">Chess Club  <span class="circle"></span></span>
+                    <span class="circled"><span class="text--accent-blue">Jacob Thompson</span> has joined your group <span class="text--accent-blue">Chess Club  </span></span>
                     <p class="text--time">1 day ago</p>
                 </div></div>
             <div class="content-notification">
@@ -73,6 +74,6 @@
     </div>
     </main>
     
-    
+    <script src="index.js"></script>
 </body>
 </html>
